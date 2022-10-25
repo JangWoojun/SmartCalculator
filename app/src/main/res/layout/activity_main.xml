@@ -10,15 +10,18 @@
         android:orientation="vertical"
         android:background="@color/white"
         android:layout_width="match_parent"
-        android:layout_height="320sp">
-
+        android:layout_height="230sp">
         <TextView
-            android:background="@color/white"
             android:layout_width="match_parent"
-            android:layout_height="270sp"/>
+            android:layout_height="270sp"
+            android:layout_margin="30sp"
+            android:background="@color/white"
+            android:gravity="bottom|right"
+            android:text="@string/num"
+            android:textSize="50sp"
+            tools:ignore="RtlHardcoded" />
 
         <LinearLayout
-            android:layout_marginTop="20sp"
             android:layout_marginLeft="15sp"
             android:layout_marginRight="15sp"
             android:background="@color/gray"
@@ -27,6 +30,58 @@
 
     </LinearLayout>
 
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textSize="30sp"
+            android:background="@drawable/radius"
+            android:text="평수"
+            android:layout_width="0dp"
+            android:layout_height="90sp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights,UsingOnClickInXml" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textSize="30sp"
+            android:background="@drawable/radius"
+            android:text="화씨"
+            android:layout_width="0dp"
+            android:layout_height="90sp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            tools:ignore="UsingOnClickInXml" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textSize="30sp"
+            android:background="@drawable/radius"
+            android:text="인치"
+            android:layout_width="0dp"
+            android:layout_height="90sp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            tools:ignore="UsingOnClickInXml" />
+
+<!--       출처표시 <a href="https://www.flaticon.com/kr/free-icons/-" title="사용자 인터페이스 아이콘">사용자 인터페이스 아이콘  제작자: Rizki Ahmad Fauzi - Flaticon</a>-->
+
+            <ImageView
+                android:src="@drawable/x"
+                android:layout_width="0dp"
+                android:layout_height="90sp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"/>
+
+
+    </LinearLayout>
     <LinearLayout
         android:layout_weight="1"
         android:orientation="horizontal"
@@ -64,6 +119,8 @@
             tools:ignore="UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:text="@string/Obelus"
+            android:textSize="25sp"
             android:background="@drawable/radius"
             android:layout_width="0dp"
             android:layout_height="90sp"
@@ -110,8 +167,8 @@
             tools:ignore="UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:textSize="15sp"
-            android:textStyle="bold"
+            android:text="@string/Times"
+            android:textSize="25sp"
             android:background="@drawable/radius"
             android:layout_width="0dp"
             android:layout_height="90sp"
@@ -158,6 +215,8 @@
             tools:ignore="UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:textSize="30sp"
+            android:text="@string/minus"
             android:background="@drawable/radius"
             android:layout_width="0dp"
             android:layout_height="90sp"
@@ -176,6 +235,8 @@
         android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.AppCompatButton
+            android:textSize="25sp"
+            android:text="@string/c"
             android:background="@drawable/radius"
             android:layout_width="0dp"
             android:layout_height="90sp"
@@ -194,6 +255,8 @@
             tools:ignore="UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:textSize="30sp"
+            android:text="@string/m"
             android:background="@drawable/radius"
             android:layout_width="0dp"
             android:layout_height="90sp"
@@ -202,6 +265,8 @@
             tools:ignore="UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:textSize="30sp"
+            android:text="@string/plus"
             android:background="@drawable/radius"
             android:layout_width="0dp"
             android:layout_height="90sp"
@@ -210,6 +275,12 @@
             tools:ignore="UsingOnClickInXml" />
 
     </LinearLayout>
+
+
+</LinearLayout>
+
+
+
 
 
 
