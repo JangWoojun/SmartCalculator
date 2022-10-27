@@ -13,7 +13,7 @@
         android:layout_height="230sp">
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="270sp"
+            android:layout_height="190sp"
             android:layout_margin="30sp"
             android:background="@color/white"
             android:gravity="bottom|right"
@@ -42,9 +42,10 @@
         android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAcreage"
             android:textSize="30sp"
             android:background="@drawable/radius"
-            android:text="평수"
+            android:text="@string/acreage"
             android:layout_width="0dp"
             android:layout_height="90sp"
             android:layout_margin="8dp"
@@ -52,9 +53,10 @@
             tools:ignore="NestedWeights,UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnFahrenheit"
             android:textSize="30sp"
             android:background="@drawable/radius"
-            android:text="화씨"
+            android:text="@string/fahrenheit"
             android:layout_width="0dp"
             android:layout_height="90sp"
             android:layout_margin="8dp"
@@ -62,9 +64,10 @@
             tools:ignore="UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnInch"
             android:textSize="30sp"
             android:background="@drawable/radius"
-            android:text="인치"
+            android:text="@string/inch"
             android:layout_width="0dp"
             android:layout_height="90sp"
             android:layout_margin="8dp"
@@ -74,6 +77,7 @@
 <!--       출처표시 <a href="https://www.flaticon.com/kr/free-icons/-" title="사용자 인터페이스 아이콘">사용자 인터페이스 아이콘  제작자: Rizki Ahmad Fauzi - Flaticon</a>-->
 
             <ImageView
+                android:id="@+id/btnX"
                 android:src="@drawable/x"
                 android:layout_width="0dp"
                 android:layout_height="90sp"
@@ -89,6 +93,7 @@
         android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn7"
             android:textSize="30sp"
             android:background="@drawable/radius"
             android:text="@string/_7"
@@ -99,6 +104,7 @@
             tools:ignore="NestedWeights,UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn8"
             android:textSize="30sp"
             android:background="@drawable/radius"
             android:text="@string/_8"
@@ -109,6 +115,7 @@
             tools:ignore="UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn9"
             android:textSize="30sp"
             android:background="@drawable/radius"
             android:text="@string/_9"
@@ -119,6 +126,7 @@
             tools:ignore="UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnObelus"
             android:text="@string/Obelus"
             android:textSize="25sp"
             android:background="@drawable/radius"
@@ -137,6 +145,7 @@
         android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn4"
             android:textSize="30sp"
             android:background="@drawable/radius"
             android:text="@string/_4"
@@ -147,6 +156,7 @@
             tools:ignore="NestedWeights,UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn5"
             android:textSize="30sp"
             android:background="@drawable/radius"
             android:text="@string/_5"
@@ -157,6 +167,7 @@
             tools:ignore="UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn6"
             android:textSize="30sp"
             android:background="@drawable/radius"
             android:text="@string/_6"
@@ -167,6 +178,7 @@
             tools:ignore="UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnTimes"
             android:text="@string/Times"
             android:textSize="25sp"
             android:background="@drawable/radius"
@@ -185,6 +197,7 @@
         android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn1"
             android:textSize="30sp"
             android:background="@drawable/radius"
             android:text="@string/_1"
@@ -195,6 +208,7 @@
             tools:ignore="NestedWeights,UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn2"
             android:textSize="30sp"
             android:background="@drawable/radius"
             android:text="@string/_2"
@@ -205,6 +219,7 @@
             tools:ignore="UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn3"
             android:textSize="30sp"
             android:background="@drawable/radius"
             android:text="@string/_3"
@@ -215,6 +230,7 @@
             tools:ignore="UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMinus"
             android:textSize="30sp"
             android:text="@string/minus"
             android:background="@drawable/radius"
@@ -235,6 +251,7 @@
         android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnChange"
             android:textSize="25sp"
             android:text="@string/c"
             android:background="@drawable/radius"
@@ -245,6 +262,7 @@
             tools:ignore="NestedWeights,UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn0"
             android:textSize="30sp"
             android:background="@drawable/radius"
             android:text="@string/_0"
@@ -255,6 +273,7 @@
             tools:ignore="UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnM"
             android:textSize="30sp"
             android:text="@string/m"
             android:background="@drawable/radius"
@@ -265,6 +284,7 @@
             tools:ignore="UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPlus"
             android:textSize="30sp"
             android:text="@string/plus"
             android:background="@drawable/radius"
