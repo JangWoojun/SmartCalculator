@@ -17,4 +17,7 @@
     <string name="Obelus">÷</string>
     <string name="minus">-</string>
     <string name="plus">+</string>
+    <string name="inch">인치</string>
+    <string name="fahrenheit">화씨</string>
+    <string name="acreage">평수</string>
 </resources>
