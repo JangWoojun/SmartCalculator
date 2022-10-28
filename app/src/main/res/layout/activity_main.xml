@@ -1,307 +1,329 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    tools:context=".MainActivity">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:background="@color/white"
+    <TextView
+        android:layout_margin="40sp"
+        android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="230sp">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="190sp"
-            android:layout_margin="30sp"
-            android:background="@color/white"
-            android:gravity="bottom|right"
-            android:text="@string/num"
-            android:textSize="50sp"
-            tools:ignore="RtlHardcoded" />
+        android:layout_height="100sp"
+        android:gravity="top|right"
+        android:text="@string/num"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:layout_marginLeft="15sp"
-            android:layout_marginRight="15sp"
-            android:background="@color/gray"
-            android:layout_width="match_parent"
-            android:layout_height="2dp"/>
+    <!--       출처표시 <a href="https://www.flaticon.com/kr/free-icons/-" title="사용자 인터페이스 아이콘">사용자 인터페이스 아이콘  제작자: Rizki Ahmad Fauzi - Flaticon</a>-->
 
-    </LinearLayout>
 
-<LinearLayout
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/btnX"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginRight="25sp"
+        android:src="@drawable/x"
+        android:layout_marginBottom="250sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/gray"
+        android:layout_marginBottom="160sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_marginBottom="350sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textAllCaps="false"
+            android:id="@+id/btnInch"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_margin="8sp"
+            android:background="@drawable/radius"
+            android:text="@string/ic"
+            android:textSize="15sp"
+            tools:ignore="NestedWeights,UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnAcreage"
-            android:textSize="30sp"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_margin="8sp"
             android:background="@drawable/radius"
-            android:text="@string/acreage"
-            android:layout_width="0dp"
-            android:layout_height="90sp"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
-            tools:ignore="NestedWeights,UsingOnClickInXml" />
+            android:text="@string/pm"
+            android:textSize="15sp"
+            tools:ignore="UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnFahrenheit"
-            android:textSize="30sp"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_margin="8sp"
             android:background="@drawable/radius"
-            android:text="@string/fahrenheit"
-            android:layout_width="0dp"
-            android:layout_height="90sp"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
-            tools:ignore="UsingOnClickInXml" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnInch"
-            android:textSize="30sp"
-            android:background="@drawable/radius"
-            android:text="@string/inch"
-            android:layout_width="0dp"
-            android:layout_height="90sp"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
-            tools:ignore="UsingOnClickInXml" />
-
-<!--       출처표시 <a href="https://www.flaticon.com/kr/free-icons/-" title="사용자 인터페이스 아이콘">사용자 인터페이스 아이콘  제작자: Rizki Ahmad Fauzi - Flaticon</a>-->
-
-            <ImageView
-                android:id="@+id/btnX"
-                android:src="@drawable/x"
-                android:layout_width="0dp"
-                android:layout_height="90sp"
-                android:layout_margin="8dp"
-                android:layout_weight="1"/>
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn7"
-            android:textSize="30sp"
-            android:background="@drawable/radius"
-            android:text="@string/_7"
-            android:layout_width="0dp"
-            android:layout_height="90sp"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
-            tools:ignore="NestedWeights,UsingOnClickInXml" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn8"
-            android:textSize="30sp"
-            android:background="@drawable/radius"
-            android:text="@string/_8"
-            android:layout_width="0dp"
-            android:layout_height="90sp"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
-            tools:ignore="UsingOnClickInXml" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn9"
-            android:textSize="30sp"
-            android:background="@drawable/radius"
-            android:text="@string/_9"
-            android:layout_width="0dp"
-            android:layout_height="90sp"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
+            android:text="@string/sh"
+            android:textSize="15sp"
             tools:ignore="UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnObelus"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_margin="8sp"
+            android:background="@drawable/radius"
             android:text="@string/Obelus"
             android:textSize="25sp"
-            android:background="@drawable/radius"
-            android:layout_width="0dp"
-            android:layout_height="90sp"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
             tools:ignore="UsingOnClickInXml" />
 
-
     </LinearLayout>
+
+
+
     <LinearLayout
+        android:gravity="center"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_marginBottom="255sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn4"
-            android:textSize="30sp"
+            android:id="@+id/btn7"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_margin="8sp"
             android:background="@drawable/radius"
-            android:text="@string/_4"
-            android:layout_width="0dp"
-            android:layout_height="90sp"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
+            android:text="@string/_7"
+            android:textSize="25sp"
             tools:ignore="NestedWeights,UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn5"
-            android:textSize="30sp"
+            android:id="@+id/btn8"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_margin="8sp"
             android:background="@drawable/radius"
-            android:text="@string/_5"
-            android:layout_width="0dp"
-            android:layout_height="90sp"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
+            android:text="@string/_8"
+            android:textSize="25sp"
             tools:ignore="UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn6"
-            android:textSize="30sp"
+            android:id="@+id/btn9"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_margin="8sp"
             android:background="@drawable/radius"
-            android:text="@string/_6"
-            android:layout_width="0dp"
-            android:layout_height="90sp"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
+            android:text="@string/_9"
+            android:textSize="25sp"
             tools:ignore="UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnTimes"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_margin="8sp"
+            android:background="@drawable/radius"
             android:text="@string/Times"
             android:textSize="25sp"
-            android:background="@drawable/radius"
-            android:layout_width="0dp"
-            android:layout_height="90sp"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
             tools:ignore="UsingOnClickInXml" />
 
 
     </LinearLayout>
+
     <LinearLayout
+        android:gravity="center"
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="170sp"
         android:layout_weight="1"
         android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn1"
-            android:textSize="30sp"
+            android:id="@+id/btn4"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_margin="8sp"
             android:background="@drawable/radius"
-            android:text="@string/_1"
-            android:layout_width="0dp"
-            android:layout_height="90sp"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
+            android:text="@string/_4"
+            android:textSize="25sp"
             tools:ignore="NestedWeights,UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn2"
-            android:textSize="30sp"
+            android:id="@+id/btn5"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_margin="8sp"
             android:background="@drawable/radius"
-            android:text="@string/_2"
-            android:layout_width="0dp"
-            android:layout_height="90sp"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
+            android:text="@string/_5"
+            android:textSize="25sp"
             tools:ignore="UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn3"
-            android:textSize="30sp"
+            android:id="@+id/btn6"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_margin="8sp"
             android:background="@drawable/radius"
-            android:text="@string/_3"
-            android:layout_width="0dp"
-            android:layout_height="90sp"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
+            android:text="@string/_6"
+            android:textSize="25sp"
             tools:ignore="UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnMinus"
-            android:textSize="30sp"
-            android:text="@string/minus"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_margin="8sp"
             android:background="@drawable/radius"
-            android:layout_width="0dp"
-            android:layout_height="90sp"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
+            android:text="@string/minus"
+            android:textSize="25sp"
             tools:ignore="UsingOnClickInXml" />
-
-
 
 
     </LinearLayout>
+
     <LinearLayout
+        android:gravity="center"
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="95sp"
         android:layout_weight="1"
         android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnChange"
-            android:textSize="25sp"
-            android:text="@string/c"
+            android:id="@+id/btn1"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_margin="8sp"
             android:background="@drawable/radius"
-            android:layout_width="0dp"
-            android:layout_height="90sp"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
+            android:text="@string/_1"
+            android:textSize="25sp"
             tools:ignore="NestedWeights,UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn0"
-            android:textSize="30sp"
+            android:id="@+id/btn2"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_margin="8sp"
             android:background="@drawable/radius"
-            android:text="@string/_0"
-            android:layout_width="0dp"
-            android:layout_height="90sp"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
+            android:text="@string/_2"
+            android:textSize="25sp"
             tools:ignore="UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnM"
-            android:textSize="30sp"
-            android:text="@string/m"
+            android:id="@+id/btn3"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_margin="8sp"
             android:background="@drawable/radius"
-            android:layout_width="0dp"
-            android:layout_height="90sp"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
+            android:text="@string/_3"
+            android:textSize="25sp"
             tools:ignore="UsingOnClickInXml" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnPlus"
-            android:textSize="30sp"
-            android:text="@string/plus"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_margin="8sp"
             android:background="@drawable/radius"
-            android:layout_width="0dp"
-            android:layout_height="90sp"
-            android:layout_margin="8dp"
-            android:layout_weight="1"
+            android:text="@string/plus"
+            android:textSize="25sp"
+            tools:ignore="UsingOnClickInXml" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnChange"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_margin="8sp"
+            android:background="@drawable/radius"
+            android:text="@string/c"
+            android:textSize="25sp"
+            tools:ignore="NestedWeights,UsingOnClickInXml" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn0"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_margin="8sp"
+            android:background="@drawable/radius"
+            android:text="@string/_0"
+            android:textSize="25sp"
+            tools:ignore="UsingOnClickInXml" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnM"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_margin="8sp"
+            android:background="@drawable/radius"
+            android:text="@string/m"
+            android:textSize="25sp"
+            tools:ignore="UsingOnClickInXml" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnEqual"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_margin="8sp"
+            android:background="@drawable/radius"
+            android:text="@string/equal"
+            android:textSize="25sp"
             tools:ignore="UsingOnClickInXml" />
 
     </LinearLayout>
 
-
-</LinearLayout>
-
-
-
-
-
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
