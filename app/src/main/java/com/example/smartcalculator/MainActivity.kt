@@ -48,7 +48,9 @@ class MainActivity : AppCompatActivity() {
 //      보조키
 
         binding.btnX.setOnClickListener {
-
+            if (binding.textView.text.isNotEmpty()){
+                binding.textView.text = binding.textView.text.substring(0,binding.textView.text.length-1)
+            }
         }
         binding.btnChange.setOnClickListener {
 
